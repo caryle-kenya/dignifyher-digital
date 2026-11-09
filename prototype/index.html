@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0df">
+  <meta name="description" content="A local demonstration of a calm, guided menstrual health education experience.">
+  <title>DignifyHer Digital — Learn with confidence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline"><span>Kisumu, Kenya</span><span class="topline-dot"></span><span>Menstrual health, shared with care</span><a href="https://caryle.co.ke/" target="_blank" rel="noreferrer">A Caryle concept <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="DignifyHer Digital home">
+      <span class="brand-mark" aria-hidden="true"><i></i><b></b><em></em></span>
+      <span class="brand-type"><strong>DignifyHer</strong><small>DIGITAL</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#learn">Learn</a>
+      <a class="nav-link" href="#about">About this demo</a>
+    </nav>
+    <button class="language-button" id="languageButton" aria-label="Language: English" title="Only English demo content is available">EN <span aria-hidden="true">⌄</span></button>
+  </header>
+
+  <main id="home">
+    <section class="hero-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A GENTLER WAY TO LEARN</div>
+        <h1>Your body deserves<br><span>answers.</span></h1>
+        <p>Clear, caring information about periods and menstrual health, whenever you need it.</p>
+        <a class="hero-link" href="#learn">Explore the guide <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun-disc"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div><div class="art-leaf leaf-three"></div>
+        <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✦</div>
+        <div class="art-caption"><span>CARE</span><span class="caption-dot"></span><span>KNOWLEDGE</span><span class="caption-dot"></span><span>DIGNITY</span></div>
+      </div>
+    </section>
+
+    <section class="experience" id="learn" aria-labelledby="guideTitle">
+      <aside class="left-rail">
+        <div class="rail-heading">YOUR GUIDE</div>
+        <button class="rail-item selected" data-topic="welcome"><span class="rail-icon">⌂</span>Start here</button>
+        <button class="rail-item" data-topic="cycle"><span class="rail-icon">◷</span>Understanding your cycle</button>
+        <button class="rail-item" data-topic="symptoms"><span class="rail-icon">✿</span>Periods & symptoms</button>
+        <button class="rail-item" data-topic="hygiene"><span class="rail-icon">✧</span>Care & hygiene</button>
+        <div class="rail-support">
+          <span class="support-icon">♡</span>
+          <strong>You deserve support.</strong>
+          <p>For a personal concern, talk with a qualified health worker or trusted adult.</p>
+        </div>
+      </aside>
+
+      <section class="guide-card" aria-label="Guided health information demo">
+        <div class="guide-topline"><div><span class="online-dot"></span><span>YOUR PRIVATE LEARNING SPACE</span></div><span class="demo-label">DEMO</span></div>
+        <div class="conversation" id="conversation" aria-live="polite">
+          <div class="welcome-message" id="welcomeMessage">
+            <div class="mini-mark" aria-hidden="true">✿</div>
+            <div class="message-meta">DIGNIFYHER DIGITAL <span>·</span> HERE TO HELP</div>
+            <h2 id="guideTitle">Hello there.<br>What would you like to know?</h2>
+            <p>Choose a topic or ask a general question. You can explore at your own pace.</p>
+          </div>
+          <div class="quick-prompts" id="quickPrompts">
+            <button class="prompt-card" data-question="How does the menstrual cycle work?"><span class="prompt-icon peach">◷</span><span><strong>My cycle</strong><small>How does it work?</small></span><span class="prompt-arrow">↗</span></button>
+            <button class="prompt-card" data-question="What symptoms are common during a period?"><span class="prompt-icon sage">✿</span><span><strong>Common symptoms</strong><small>What might I feel?</small></span><span class="prompt-arrow">↗</span></button>
+            <button class="prompt-card" data-question="How can I care for myself during my period?"><span class="prompt-icon gold">✧</span><span><strong>Taking care</strong><small>Simple hygiene guidance</small></span><span class="prompt-arrow">↗</span></button>
+          </div>
+          <div class="chat-log" id="chatLog"></div>
+        </div>
+        <form class="question-form" id="questionForm">
+          <label class="sr-only" for="questionInput">Type a general question</label>
+          <input id="questionInput" type="text" maxlength="180" autocomplete="off" placeholder="Type a general question…" aria-describedby="inputPrivacy">
+          <button type="submit" aria-label="Send question"><span>Send</span><b aria-hidden="true">↑</b></button>
+        </form>
+        <div class="input-privacy" id="inputPrivacy"><span>⌑</span> Please don’t include your name or personal health details.</div>
+        <div class="guide-disclaimer">This demo shares general learning information. It is not a medical service.</div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="quote-card">
+          <span class="quote-mark">“</span>
+          <p>Knowing your body is a quiet kind of power.</p>
+          <div class="quote-line"></div>
+          <span class="quote-by">A LITTLE REMINDER</span>
+          <div class="flower-stamp" aria-hidden="true">✿</div>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">↗</div>
+          <div><strong>Grounded in care</strong><p>Learning notes link to trusted public health sources.</p></div>
+        </div>
+        <a class="source-link" href="https://www.who.int/news-room/fact-sheets/detail/menstrual-health" target="_blank" rel="noreferrer">About menstrual health <span>↗</span></a>
+      </aside>
+    </section>
+
+    <section class="bottom-note" id="about">
+      <div class="note-flower" aria-hidden="true">✿</div>
+      <div><span class="eyebrow small">A NOTE ABOUT THIS EXPERIENCE</span><p>This is an early demonstration with a small set of prepared learning topics. The content needs review by Caryle and qualified health reviewers before it is used with a community.</p></div>
+      <a href="https://caryle.co.ke/about-caryle/" target="_blank" rel="noreferrer">Meet Caryle <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><span>© Caryle Enterprises · Kisumu, Kenya</span><span>Made with care <b>✿</b></span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
